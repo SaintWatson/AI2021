@@ -1,8 +1,5 @@
-from torch._C import import_ir_module_from_buffer
 from torch.cuda import is_available
 from torchvision import transforms
-from torchvision.transforms.functional import resize
-from torchvision.transforms.transforms import Grayscale, RandomHorizontalFlip, RandomResizedCrop, RandomRotation, RandomVerticalFlip, Resize
 
 IMG_SIZE = 256
 DEVICE = "cuda:5" if is_available()  else "cpu"
